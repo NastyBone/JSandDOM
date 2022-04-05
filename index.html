@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Inventory Simulator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+        </script>
+
+
+</head>
+<body class="texture-background">
+    <!--Header-->
+    <header id="main-header" class="main texture-background">
+        <h2 id="main-description">Inventory Simulator</h2>
+        <p id="main-text">A Javascript & DOM Practice Project</p>
+    </header>
+    <!--Navbar-->
+    <nav id="navbar">
+        <div class="navbar-button texture-background hoverable" id ='navbar-reset'>
+        <span class="navbar-button-text">reset template</span></div>
+
+        <div  class="navbar-button texture-background hoverable" id="navbar-delete">
+        <span class="navbar-button-text">delete element</span></div>
+
+        <div class="navbar-button texture-background hoverable" id="navbar-edit">
+        <span class="navbar-button-text">edit element</span></div>
+
+        <div class="navbar-button texture-background hoverable" id="navbar-clear">
+        <span class="navbar-button-text">clear elements</span></div>
+
+        <div class="navbar-button texture-background hoverable" id="navbar-sort">
+            <span class="navbar-button-text">sort elements</span></div>
+
+        <div class="navbar-button texture-background hoverable" id="navbar-export">
+            <span class="navbar-button-text">export data</span></div>
+
+        <div class="navbar-button texture-background hoverable" id="navbar-preview">
+            <span class="navbar-button-text">preview element</span></div>
+
+            <label for="data-upload" class="navbar-button texture-background hoverable" style="display: flex;
+            justify-content: center;">
+            <span style="align-self: center;" class="navbar-button-text">import data</span>
+            <form
+            id="file-form" style="display:none">
+                <input type="file" id="data-upload" accept="application/vnd.ms-excel">
+            </form>
+        </label>
+        
+        
+        <input class="navbar-input texture-background" placeholder="search" type="text" id = 'navbar-search'>
+    </nav>
+    <!--Main-->
+
+    <main id="main-container" class="main">
+<article id="container-data" class="container">
+
+</article>
+
+<div id ="container-preview" class="texture-background" >
+<h2 id="preview-new-template">Create a Template!</h2>
+
+<div id="preview-field-area"></div>
+
+
+
+<div id="preview-button-area">
+<div id="preview-add-button" class="navbar-button texture-background preview-button hoverable"><span class = 'preview-button-text'> Add new field</span></div>
+
+<div  id="preview-save-button" class="navbar-button texture-background preview-button hoverable"><span class = 'preview-button-text'>Save Template</span></div>
+
+<div id="preview-delete-button" class="navbar-button texture-background preview-button hoverable"><span class = 'preview-button-text'>Delete field</span></div>
+
+<label id="preview-image-button" class="navbar-button texture-background preview-button hoverable" for = 'image-upload'>
+
+    Upload Image
+    <form id = 'image-form' style="display: none;"></form>
+    <input id="image-upload" type="file" style="opacity: 0; width: 0; display: none;" accept="image/*">
+    </label>
+</div>
+<span id ='preview-error-message' ></span>
+</div>
+
+    </main>
+</body>
+
+<article id = 'preview-element' style="display: none;" >
+
+    <div id="element-image-preview">
+    </div>
+    <div id="data-area">
+        <button id ='close-preview-button' class="hoverable">X</button>
+        <div id="element-data-preview"></div>
+    </div>
+    </article>
+<script src="/dist/main.js"></script>
+
+</html>
