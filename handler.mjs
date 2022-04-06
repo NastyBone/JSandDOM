@@ -1,5 +1,4 @@
 import * as XLSX from 'xlsx'
-
 class handler {
 
     static selectedElement = null;
